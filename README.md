@@ -105,4 +105,4 @@ He lives English.
 
 ## 🛠 Skills
 Javascript, Typescript, Solidity, HTML, CSS, Vue.js, Angular, Node.js, Laravel, MongoDB, MySQL, DynamoDB, Socket, AWS, AWS Chime, WebRTC, Serverless, Linux systems, React.Js,
-React Native, PostgreSQL, PHP, Laravel.
+React Native, PostgreSQL, PHP.
