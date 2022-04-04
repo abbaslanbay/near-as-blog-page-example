@@ -1,18 +1,22 @@
 import 'regenerator-runtime/runtime';
-import React from 'react';
+import React,{useState} from 'react';
 import {Card,Col,Nav,Button} from 'react-bootstrap';
 const BlogItem = ({ contract,item ,currentUser}) => {
+  const [loading, setLoading] = useState(false);
  
   const remove = (item) => {
-    console.log(item.author,currentUser.accountId)
-    if(item.author == currentUser.accountId){
+    setLoading(true)
+    if(item.author != currentUser.accountId){
       alert("You are not authorized for deleting this item");
+      setLoading(false)
       return;
     }
     
 
 
-    contract.del({id:item.id})
+    contract.del({id:item.id});
+    setLoading(false)
+
   }
 
   return (
@@ -31,6 +35,7 @@ const BlogItem = ({ contract,item ,currentUser}) => {
             {currentUser ?
             <Button variant="danger" style={{float:'right'}}
             onClick={() => remove(item)}
+            disabled={loading}
             >Remove</Button>
             :null}
           </Card.Footer>

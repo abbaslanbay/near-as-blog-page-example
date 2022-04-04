@@ -17,14 +17,17 @@ const ViewBlog = ({ contract, currentUser}) => {
         }else{
             num = (page - 1)* limit
         }
+        const checkSetInterval = setInterval(() => {
             getBlogs()
+        }, 1000);
+    return () => clearInterval(checkSetInterval);
+
      
     }, [page, contract])
 
     const getBlogs = () => {
         contract.getAll({ offset:num, limit: limit })
         .then((arr) => {
-            console.log(arr)
             setBlogs(arr)
         });
     }
