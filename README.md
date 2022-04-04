@@ -1,5 +1,5 @@
 
-# Near Protocol Blog Example
+# Near Blog Example
 
 Simple blog page
 In this project, I ran the simple blog page logic made in Web2, some of it on Web3.
@@ -24,7 +24,7 @@ This project is used by the following companies:
 
 ## Screenshots
 
-![App Screenshot](https://gateway.pinata.cloud/ipfs/QmXzgTRQMT8Gx4NDb2AkENkMeiAju9SgnzvgsZKFrzdCfP)
+![App Screenshot](https://i.ibb.co/bbrTKZ6/Ekran-Resmi-2022-04-04-10-17-09.png)
 
 
 
